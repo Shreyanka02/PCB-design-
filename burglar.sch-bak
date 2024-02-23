@@ -1,0 +1,216 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	6050 4850 5200 4850
+Connection ~ 6050 4850
+Wire Wire Line
+	6050 4950 6050 4850
+$Comp
+L power:Earth #PWR01
+U 1 1 64E10A0E
+P 6050 4950
+F 0 "#PWR01" H 6050 4700 50  0001 C CNN
+F 1 "Earth" H 6050 4800 50  0001 C CNN
+F 2 "" H 6050 4950 50  0001 C CNN
+F 3 "~" H 6050 4950 50  0001 C CNN
+	1    6050 4950
+	1    0    0    -1  
+$EndComp
+Connection ~ 6700 4850
+Wire Wire Line
+	8100 4850 6700 4850
+Wire Wire Line
+	8100 3650 8100 4850
+Connection ~ 6700 1900
+Wire Wire Line
+	8100 1900 6700 1900
+Wire Wire Line
+	8100 3250 8100 1900
+Wire Wire Line
+	6700 4850 6050 4850
+Wire Wire Line
+	6700 3650 6700 4850
+Connection ~ 5100 1900
+Wire Wire Line
+	6700 1900 5100 1900
+Wire Wire Line
+	6700 3450 6700 1900
+Wire Wire Line
+	5100 3750 5100 4150
+Connection ~ 5100 3750
+Wire Wire Line
+	5100 2650 5100 3750
+Wire Wire Line
+	4650 3750 5100 3750
+Wire Wire Line
+	5200 4250 5200 4850
+Wire Wire Line
+	5100 4150 5200 4150
+Wire Wire Line
+	3850 2450 4800 2450
+Wire Wire Line
+	3850 3150 3850 2450
+Wire Wire Line
+	3550 3350 2600 3350
+Wire Wire Line
+	2600 1900 2600 3350
+Wire Wire Line
+	3750 1900 2600 1900
+Wire Wire Line
+	5100 1900 5100 2250
+Wire Wire Line
+	3950 1900 5100 1900
+$Comp
+L Device:Battery BT1
+U 1 1 64E04A6C
+P 8100 3450
+F 0 "BT1" H 8208 3496 50  0000 L CNN
+F 1 "3V" H 8208 3405 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" V 8100 3510 50  0001 C CNN
+F 3 "~" V 8100 3510 50  0001 C CNN
+	1    8100 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP_Small C2
+U 1 1 64E038FB
+P 6700 3550
+F 0 "C2" H 6788 3596 50  0000 L CNN
+F 1 "100uf" H 6788 3505 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 6700 3550 50  0001 C CNN
+F 3 "~" H 6700 3550 50  0001 C CNN
+	1    6700 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R1
+U 1 1 64E022F3
+P 3850 1900
+F 0 "R1" V 3645 1900 50  0000 C CNN
+F 1 "330K" V 3736 1900 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 3850 1900 50  0001 C CNN
+F 3 "~" H 3850 1900 50  0001 C CNN
+	1    3850 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:BC547 Q2
+U 1 1 64E014ED
+P 5000 2450
+F 0 "Q2" H 5191 2496 50  0000 L CNN
+F 1 "BC547" H 5191 2405 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5200 2375 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" H 5000 2450 50  0001 L CNN
+	1    5000 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC547 Q1
+U 1 1 64E00C80
+P 3750 3350
+F 0 "Q1" H 3941 3396 50  0000 L CNN
+F 1 "BC547" H 3941 3305 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3950 3275 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" H 3750 3350 50  0001 L CNN
+	1    3750 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Speaker LS1
+U 1 1 64E02F23
+P 5400 4150
+F 0 "LS1" H 5570 4146 50  0000 L CNN
+F 1 "Speaker" H 5570 4055 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 5400 3950 50  0001 C CNN
+F 3 "~" H 5390 4100 50  0001 C CNN
+	1    5400 4150
+	1    0    0    -1  
+$EndComp
+Connection ~ 2600 3350
+Connection ~ 5200 4850
+$Comp
+L Device:R_Small_US R2
+U 1 1 64E01D8C
+P 3850 4400
+F 0 "R2" H 3918 4446 50  0000 L CNN
+F 1 "100" H 3918 4355 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 3850 4400 50  0001 C CNN
+F 3 "~" H 3850 4400 50  0001 C CNN
+	1    3850 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 64E040F8
+P 4500 3750
+F 0 "C1" V 4248 3750 50  0000 C CNN
+F 1 "0.01uf" V 4339 3750 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 4538 3600 50  0001 C CNN
+F 3 "~" H 4500 3750 50  0001 C CNN
+	1    4500 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2600 4850 3850 4850
+Wire Wire Line
+	3850 4850 3850 4500
+Wire Wire Line
+	2600 3350 2600 3750
+Wire Wire Line
+	3850 3550 3850 4300
+Wire Wire Line
+	5200 4850 3850 4850
+Connection ~ 3850 4850
+Wire Wire Line
+	4350 3750 2600 3750
+$Comp
+L FSM8JH:FSM8JH S?
+U 1 1 64E38C3A
+P 2600 4300
+F 0 "S?" V 2646 4122 50  0000 R CNN
+F 1 "FSM8JH" V 2555 4122 50  0000 R CNN
+F 2 "SW_FSM8JH" H 2600 4300 50  0001 L BNN
+F 3 "" H 2600 4300 50  0001 L BNN
+F 4 "TE Connectivity" H 2600 4300 50  0001 L BNN "MF"
+F 5 "\\nTactile Switch SPST-NO Top Actuated Through Hole\\n" H 2600 4300 50  0001 L BNN "Description"
+F 6 "None" H 2600 4300 50  0001 L BNN "Package"
+F 7 "None" H 2600 4300 50  0001 L BNN "Price"
+F 8 "https://www.snapeda.com/parts/FSM8JH/TE+Connectivity+ALCOSWITCH+Switches/view-part/?ref=eda" H 2600 4300 50  0001 L BNN "Check_prices"
+F 9 "MANUFACTURER RECOMMENDATIONS" H 2600 4300 50  0001 L BNN "STANDARD"
+F 10 "C10" H 2600 4300 50  0001 L BNN "PARTREV"
+F 11 "https://www.snapeda.com/parts/FSM8JH/TE+Connectivity+ALCOSWITCH+Switches/view-part/?ref=snap" H 2600 4300 50  0001 L BNN "SnapEDA_Link"
+F 12 "FSM8JH" H 2600 4300 50  0001 L BNN "MP"
+F 13 "In Stock" H 2600 4300 50  0001 L BNN "Availability"
+F 14 "TE CONNECTIVITY" H 2600 4300 50  0001 L BNN "MANUFACTURER"
+	1    2600 4300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2700 4050 2600 4050
+Wire Wire Line
+	2600 4050 2600 3750
+Connection ~ 2600 4050
+Wire Wire Line
+	2600 4050 2500 4050
+Connection ~ 2600 3750
+Wire Wire Line
+	2500 4550 2600 4550
+Wire Wire Line
+	2600 4850 2600 4550
+Connection ~ 2600 4550
+Wire Wire Line
+	2600 4550 2700 4550
+$EndSCHEMATC
